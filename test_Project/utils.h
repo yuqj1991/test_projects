@@ -33,7 +33,7 @@ void print(int* data, int rows, int cols) {
 	for (int i = 0; i < rows * cols; i++) {
 		std::cout << data[i] << ", ";
 	}
-	std::cout << endl;
+	std::cout << std::endl;
 }
 
 int det_linear_algera(int* data, int rows, int cols) {

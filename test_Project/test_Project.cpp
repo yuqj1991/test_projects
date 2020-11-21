@@ -52,6 +52,35 @@ void test_algra() {
 	std::cout << "det a: " << value << endl;
 }
 
+void test_SetUnorderList() {
+	SetUnorderList<int> set_a, set_b, set_c, set_d, set_f;
+	for (int i = 1; i <= 10; i++) {
+		bool add = set_a.AddMember(i);
+		if (!add) {
+			std::cout << "can not the number of " << i << " in the set_a" << std::endl;
+		}
+		bool bdd = set_b.AddMember(2 * i);
+		if (!bdd) {
+			std::cout << "can not the number of " << 2 * i << " in the set_b" << std::endl;
+		}
+	}
+	std::cout << "print original set_a & set_b" << std::endl;
+	set_a.printNode();
+	set_b.printNode();
+	std::cout << "print set_a + set_b" << std::endl;
+	set_c = set_a + set_b;
+	set_c.printNode();
+	std::cout << "print set_a * set_b" << std::endl;
+	set_d = set_a * set_b;
+	set_d.printNode();
+	std::cout << "print set_a - set_b" << std::endl;
+	set_f = set_a - set_b;
+	set_f.printNode();
+	std::cout << "print del member in set_a" << std::endl;
+	bool del = set_a.DelMember(6);
+	set_a.printNode();
+}
+
 int main()
 {
 	/*
@@ -77,6 +106,7 @@ int main()
 	//test_point_position();
 	//test_reverse_List();
 	//test_SingleInstance();
+	test_SetUnorderList();
 	getchar();
     return 0;
 }
