@@ -1,0 +1,7 @@
+﻿  test_Project.cpp
+c:\workspace\dual_camera_depth\test_project\test_project\test_project.cpp(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  SampleClass.cpp
+  Generating Code...
+c:\workspace\dual_camera_depth\test_project\test_project\test_project.cpp(56): warning C4715: 'det_linear_algera': not all control paths return a value
+  test_Project.vcxproj -> C:\workspace\dual_camera_depth\test_Project\Debug\test_Project.exe
+  test_Project.vcxproj -> C:\workspace\dual_camera_depth\test_Project\Debug\test_Project.pdb (Full PDB)
